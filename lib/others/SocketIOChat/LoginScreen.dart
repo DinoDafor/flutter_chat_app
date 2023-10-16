@@ -58,7 +58,6 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
-
   _loginBtnTap() {
     if (_usernameController.text.isEmpty) {
       return;

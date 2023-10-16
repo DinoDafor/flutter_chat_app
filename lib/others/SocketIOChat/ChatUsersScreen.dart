@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart ';
 
 import 'Global.dart';
+import 'User.dart';
 
 class ChatUsersScreen extends StatefulWidget {
 
@@ -14,11 +15,10 @@ class ChatUsersScreen extends StatefulWidget {
 
 class _ChatUsersScreenState extends State<ChatUsersScreen> {
 
-  List<User> _chatUsers;
+ late List<User> _chatUsers;
 
   @override
   void initState() {
-    con
     super.initState();
     _chatUsers = G.getUsersFor(G.loggedInUser);
   }
