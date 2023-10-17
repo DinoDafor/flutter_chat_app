@@ -4,6 +4,7 @@ class User {
 
   User({required this.id, required this.name, required this.email});
 
+//todo почему не создать обычный конструкор?
   factory User.fromJson(Map<String, dynamic> json){
     return User(
       id:json["id"] as int,

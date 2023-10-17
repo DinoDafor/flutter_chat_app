@@ -19,6 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   void initState() {
     super.initState();
+    G.initDummyUsers();
   }
 
   @override
@@ -58,12 +59,13 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
+
   _loginBtnTap() {
     if (_usernameController.text.isEmpty) {
       return;
     }
     User me = G.dummyUsers[0];
-    if(_usernameController.text != 'a') {
+    if (_usernameController.text != 'a') {
       me = G.dummyUsers[1];
     }
     G.loggedInUser = me;

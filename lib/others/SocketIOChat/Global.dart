@@ -3,6 +3,7 @@ import 'User.dart';
 class G {
   static late List<User> dummyUsers;
   static late User loggedInUser;
+  static late User toChatUser;
 
   static void initDummyUsers() {
     User userA = User(id: 1000, name: 'A', email: 'testa@gmail.com');
